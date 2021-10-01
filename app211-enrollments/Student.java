@@ -41,7 +41,9 @@ public class Student
         return id;
     }
 
-    public void enrol(Course course)
+    /**
+     * Enrols the student on a course
+     */public void enrol(Course course)
     {
         this.course = course;
     }
@@ -53,7 +55,9 @@ public class Student
     {
         System.out.println(" Student ID: " + id + " Name: " + name);
     }
-    
+    /**
+     * print the course details
+     */
     public void printCourse()
     {
         course.print();
