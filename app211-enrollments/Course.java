@@ -55,12 +55,12 @@ public class Course
      * 
      */
     
-    public void printModuleCourse()
+    public void print()
     {
        
     public void print()
     {
-        printHeading();
+        
         
         System.out.println(" Course Code: " + code + ": " + title);
         System.out.println();
