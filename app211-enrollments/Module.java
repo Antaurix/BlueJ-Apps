@@ -2,32 +2,44 @@
 /**
  * Write a description of class Module here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Ionut Boris
+ * @version v1.0
  */
 public class Module
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private String code;
+    private String title;
+    private int credit;
+    
 
     /**
      * Constructor for objects of class Module
      */
     public Module()
     {
-        // initialise instance variables
-        x = 0;
+        // initi
+        this.code = code;
+        this.title = title;
+        this.credit = credit;
+    
+    
     }
 
-    /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
-     */
-    public int sampleMethod(int y)
+    public getCode ()
+    {
+        return code;
+    
+    }
+    public getCredit ()
+    {
+        return credit;
+    }
+
+    public getTitle()
     {
         // put your code here
-        return x + y;
+        return title;
+    
     }
 }
