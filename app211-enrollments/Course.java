@@ -50,4 +50,26 @@ public class Course
         System.out.println(" --------------------------------");
         System.out.println();
     }
+    
+    /** Print both course and module details
+     * 
+     */
+    
+    public void printModuleCourse()
+    {
+       
+    public void print()
+    {
+        printHeading();
+        
+        System.out.println(" Course Code: " + code + ": " + title);
+        System.out.println();
+    }
+    
+    public void print ()
+    {
+      
+    System.out.println( "Module code: " + code + ": "  + title );
+    System.out.println();
+}
 }
