@@ -1,6 +1,6 @@
 
 /**
- * Write a description of class Module here.
+ * Module 
  *
  * @author Ionut Boris
  * @version v1.0
@@ -14,32 +14,50 @@ public class Module
     
 
     /**
-     * Constructor for objects of class Module
+     * Setting the variables of the module
      */
-    public Module()
+    public Module(String code, String title)
     {
         // initi
         this.code = code;
         this.title = title;
-        this.credit = credit;
+        credit=0;
     
     
     }
 
-    public getCode ()
+    /** Set the value of the code
+     * 
+     */public String getCode ()
     {
-        return code;
+        return this.code;
     
     }
-    public getCredit ()
+    
+        
+    /** This medthod is for printing the details of the module
+     * 
+     */
+    public void print ()
     {
-        return credit;
-    }
+      
+    System.out.println( "Module code: " + code + ": "  + title );
+    System.out.println();
+}
 
-    public getTitle()
+   
+    /** Set the value for the title 
+     * 
+     */public String getTitle()
     {
         // put your code here
-        return title;
+        return this.title;
     
     }
+    
+    public void setCredit(int credit)
+    {
+        this.credit = credit;
+    }
+    
 }
