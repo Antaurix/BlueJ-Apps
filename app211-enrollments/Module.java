@@ -18,7 +18,7 @@ public class Module
      */
     public Module(String code, String title)
     {
-        // initi
+        
         this.code = code;
         this.title = title;
         credit=0;
@@ -30,7 +30,7 @@ public class Module
      * 
      */public String getCode ()
     {
-        return this.code;
+        return code;
     
     }
     
@@ -41,7 +41,8 @@ public class Module
     public void print ()
     {
       
-    System.out.println( "Module code: " + code + ": "  + title );
+    System.out.println( "Module code: " + code + ": " 
+                        + title + "Credit: " + credit);
     System.out.println();
 }
 
@@ -51,7 +52,7 @@ public class Module
      */public String getTitle()
     {
         // put your code here
-        return this.title;
+        return title;
     
     }
     

@@ -51,25 +51,24 @@ public class Course
         System.out.println();
     }
     
-    /** Print both course and module details
+    /** Adding the module to the course 
      * 
      */
+    public void addModule(Module module)
+    {
+        this.module = module;
+    }
+  
+    /** Printing the course and the module simultaniously
+     * 
+     */
+    public void print2()
+    {
+        
     
-    public void print()
-    {
-       
-    public void print()
-    {
-        
-        
         System.out.println(" Course Code: " + code + ": " + title);
         System.out.println();
+        
+        module.print();
     }
-    
-    public void print ()
-    {
-      
-    System.out.println( "Module code: " + code + ": "  + title );
-    System.out.println();
-}
 }
