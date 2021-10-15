@@ -43,7 +43,8 @@ public class Student
 
     /**
      * Enrols the student on a course
-     */public void enrol(Course course)
+     */
+    public void enrol(Course course)
     {
         this.course = course;
     }

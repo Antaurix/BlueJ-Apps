@@ -14,7 +14,9 @@ public class Module
     
 
     /**
-     * Setting the variables of the module
+     * This is the constructor method that will set the parameters 
+     * for the class module and it will sets up the initial values
+     * of the variables.
      */
     public Module(String code, String title)
     {
@@ -26,7 +28,7 @@ public class Module
     
     }
 
-    /** Set the value of the code
+    /** This method is returning the value of the code.
      * 
      */public String getCode ()
     {
@@ -47,7 +49,7 @@ public class Module
 }
 
    
-    /** Set the value for the title 
+    /** Over this method i am returning the value for the title within.
      * 
      */public String getTitle()
     {

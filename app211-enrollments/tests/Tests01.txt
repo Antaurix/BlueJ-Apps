@@ -9,7 +9,7 @@ computing.print();
 Student student1 = new Student("Ionut Boris", 100190418);
 student1.print();
  Student ID: 100190418 Name: Ionut Boris
-student1.enrol(computing );
+student1.enrol(computing);
 student1.printCourse();
  --------------------------------
    App211: Course Details
@@ -17,27 +17,21 @@ student1.printCourse();
 
  Course Code: BT1CTG1: BSc Computing
 
-module1.print();
+Module module2 = new Module("CO452", "Programming Concepts");
+module2.print();
 Module code: CO452: Programming ConceptsCredit: 0
 
-module1.setCredit(15);
-module1.print();
+module2.setCredit(15);
+module2.print();
 Module code: CO452: Programming ConceptsCredit: 15
 
-Course course1 = new Course("BT1CTG1", "BSc Computing");
-Student student1 = new Student("Ionut Boris",  100190418);
-student1.enrol(course1);
-Module module1 = new Module("CO452", "Programming Concepts");
-module1.print();
-Module code: CO452: Programming ConceptsCredit: 0
+computing.addModule(module2);
+computing.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
 
-module1.setCredit(15);
-module1.print();
-Module code: CO452: Programming ConceptsCredit: 15
-
-course1.addModule(module1);
-course1.print2();
- Course Code: BT1CTG1: BSc Computing
+ Course Code: BT1CTG1: Programming Concepts
 
 Module code: CO452: Programming ConceptsCredit: 15
 

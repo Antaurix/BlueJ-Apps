@@ -38,6 +38,8 @@ public class Course
         
         System.out.println(" Course Code: " + code + ": " + title);
         System.out.println();
+        module.print();
+        
     }
     
     /**
@@ -51,7 +53,7 @@ public class Course
         System.out.println();
     }
     
-    /** Adding the module to the course 
+    /**With thid method we are going to add the module to the course 
      * 
      */
     public void addModule(Module module)
@@ -59,16 +61,5 @@ public class Course
         this.module = module;
     }
   
-    /** Printing the course and the module simultaniously
-     * 
-     */
-    public void print2()
-    {
-        
     
-        System.out.println(" Course Code: " + code + ": " + title);
-        System.out.println();
-        
-        module.print();
-    }
 }
