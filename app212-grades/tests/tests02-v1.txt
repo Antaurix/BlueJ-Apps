@@ -1,0 +1,32 @@
+Student student1 = new Student();
+student1.print();
+ Student ID: 100190418, Boris
+Course course1 = new Course();
+student1.enrol(course1);
+student1.printCourse();
+ Student ID: 100190418, Boris
+
+ Course BT1CTG1: BSc Computing
+
+Module co452 = new Module("C0452", "Programming Concepts");
+course1.addModule(co452);
+ModuleMark BorisCo452Mark = new ModuleMark(co452);
+BorisCo452Mark.setMark(70);
+student1.addMark(BorisCo452Mark);
+student1.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 100190418, Boris
+
+ Course BT1CTG1: BSc Computing
+
+
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+
+ No Final Course Grade Yet!

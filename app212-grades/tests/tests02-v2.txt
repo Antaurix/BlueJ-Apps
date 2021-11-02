@@ -1,0 +1,176 @@
+BorisCo452Mark.getCredit()
+    returned int 15
+Student student1 = new Student();
+Student Boris = new Student();
+Student Boris = new Student();
+Course Computing = new Course();
+Module co452 = new Module("CO452", "Programming Concepts");
+Computing.addModule(co452);
+Boris.enrol(Computing);
+ModuleMark BorisCo452Mark = new ModuleMark(co452);
+BorisCo452Mark.setMark(70);
+Boris.addMark(BorisCo452Mark);
+Boris.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 100190418, Boris
+
+ Course BT1CTG1: BSc Computing
+
+ CO452: 	Programming Concepts	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: 	Programming Concepts	  15	70A
+
+
+ Final Course Grade = F
+Module co450 = new Module("CO450", "Computer Architecture");
+Computing.addModule(co450);
+ModuleMark BorisCo450Mark = new ModuleMark(co450);
+BorisCo450Mark.setMark(55);
+Boris.addMark(BorisCo450Mark);
+Boris.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 100190418, Boris
+
+ Course BT1CTG1: BSc Computing
+
+ CO452: 	Programming Concepts	  15 credits
+ CO450: 	Computer Architecture	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: Programming Concepts	  15	70        A
+
+ CO450: Computer Architecture	  15	55        C
+
+
+ Final Course Grade = F
+Module co461 = new Module("CO461", "3D Modelling");
+Computing.addModule(co461);
+ModuleMark BorisModelingMark = new ModuleMark(co461);
+BorisModelingMark.setMark(96);
+Boris.addMark(BorisModelingMark);
+Module co550 = new Module("CO550", "Web Applications");
+Computing.addModule(co550);
+ModuleMark BorisApplicationsMark = new ModuleMark(co550);
+BorisApplicationsMark.setMark(88);
+Boris.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 100190418, Boris
+
+ Course BT1CTG1: BSc Computing
+
+ CO452: 	Programming Concepts	  15 credits
+ CO450: 	Computer Architecture	  15 credits
+ CO461: 	3D Modelling	  15 credits
+ CO550: 	Web Applications	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: Programming Concepts	  15	70        A
+
+ CO450: Computer Architecture	  15	55        C
+
+ CO461: 3D Modelling	          15    96        A
+
+
+ Final Course Grade = C
+Computing.addModule(co550);
+Boris.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 100190418, Boris
+
+ Course BT1CTG1: BSc Computing
+
+ CO452: 	Programming Concepts	  15 credits
+ CO450: 	Computer Architecture	  15 credits
+ CO461: 	3D Modelling	  15 credits
+ CO550: 	Web Applications	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: Programming Concepts	  15	70        A
+
+ CO450: Computer Architecture	  15	55        C
+
+ CO461: 3D Modelling	          15	96        A
+
+
+ Final Course Grade = C
+BorisApplicationsMark.setMark(46);
+Boris.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 100190418, Boris
+
+ Course BT1CTG1: BSc Computing
+
+ CO452: 	Programming Concepts	  15 credits
+ CO450: 	Computer Architecture	  15 credits
+ CO461: 	3D Modelling	  15 credits
+ CO550: 	Web Applications	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: Programming Concepts	  15	70         A
+
+ CO450: Computer Architecture	  15	55         C
+
+ CO461: 3D Modelling	          15    96        A
+
+
+ Final Course Grade = C
+Boris.addMark(BorisApplicationsMark);
+Boris.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by student name
+ ------------------------------------
+ Student ID: 100190418, Boris
+
+ Course BT1CTG1: BSc Computing
+
+ CO452: 	Programming Concepts	  15 credits
+ CO450: 	Computer Architecture	  15 credits
+ CO461: 	3D Modelling	  15 credits
+ CO550: 	Web Applications	  15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: Programming Concepts	  15	70         A
+
+ CO450: Computer Architecture	  15	55         C
+
+ CO461: 3D Modelling	          15	96         A
+
+ CO550: Web Applications	  15	46         D
+
+
+ Final Course Grade = B
