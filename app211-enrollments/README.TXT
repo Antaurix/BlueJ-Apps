@@ -1,12 +1,10 @@
 ------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
+In this application we are going to represent a real life situation from 
+a school where a student can enroll in a course and withing that course
+the modules that the student have to follow.
 ------------------------------------------------------------------------
 
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+PROJECT TITLE: Enrollments
+PURPOSE OF PROJECT: School Usage
+VERSION or DATE: v1.0 - Sep 2021
+AUTHORS: Ionut Florin Boris
