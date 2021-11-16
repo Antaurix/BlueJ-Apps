@@ -5,8 +5,10 @@
  * the StockManager class is completed.
  * 
  * @author David J. Barnes and Michael Kölling.
- * @version 2016.02.29
+ * Modified by Ionut Boris
+ * @version v1.0 - 11/2021
  */
+
 public class StockDemo
 {
     // The stock manager.
@@ -23,9 +25,14 @@ public class StockDemo
         // Add at least 10 products, they must be unique to you
         // Make sure the ids are sequential numbers
         
-        stock.add(new Product(101, "Samsung Galaxy S20"));
-        stock.add(new Product(102, "Apple iPhone 12"));
-        stock.add(new Product(103, "Google Pixel 4A"));
+        stock.add(new Product(101, "Crysis 3"));
+        stock.add(new Product(102, "Dota 2"));
+        stock.add(new Product(103, "Counter Strike Global Offensive"));
+        stock.add(new Product(104, "Rift"));
+        stock.add(new Product(105, "Battlefield Bad Company 2"));
+        stock.add(new Product(106, "Call of Duty: Modern Warfare 2"));
+        
+        
     }
     
     /**
