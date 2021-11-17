@@ -47,10 +47,28 @@ public class StockList
     public void buyProduct(int productID, int amount)
     {
         Product product = findProduct(productID);
-        if(product != null)
-           product.increaseQuantity(amount);
+        if (product != null)
+        {
+             if(product.getQuantity() < 999)
+            {
+                product.increaseQuantity(amount);
+                System.out.println(" We bought " + amount + "  " +
+                product.getName());
+               
+            }
+            else
+            {
+                System.out.println(" We don't got enough space for  " + 
+                product.getName());
+                
+              
+            }
+        }
         else
-          System.out.println("Couldn't find the product");
+        {
+            System.out.println(" We couldn't find the product ");
+            
+        }
     }
     
     /**
@@ -62,40 +80,70 @@ public class StockList
         for(Product product : stock)
         {
             if(product.getID() == productID)
-                 return product;
+            return product;
         }
         return null;
     }
     
     
     /**
-     * Sell one of the given product.
+     * Sell more quantity of the given product.
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
      */
-    public void sellProduct(int productID)
+    public void sellProduct(int productID, int amount)
     {
         Product product = findProduct(productID);
         
         if(product != null) 
         {
-            if(product.getQuantity() > 0)
+            if(product.getQuantity() > 0 && product.getQuantity() > amount)
             {
-                product.decreaseQuantity(1);
+                product.decreaseQuantity(amount);
+                System.out.println(" We sold " + amount + "  " +
+                product.getName());
+               
+            }
+            else if(product.getQuantity()  == 0)
+            {
+                System.out.println(" The product is out of stock " + 
+                product.getName());
                 
-                // printout message
+              
             }
             else
             {
-                // printout message
+                System.out.println(" Can't sell " + amount + " of " +
+                product.getName() + " because we only have " 
+                +product.getQuantity() );
             }
         }
         else
         {
-            // printout message
+            System.out.println(" We couldn't find the product ");
+            
         }
-    }    
-
+    }  
+    
+    /**
+     * Sell one of the given product.
+     * 
+     */
+    public void sellProduct(int productID)
+    {
+        sellProduct(productID, 1);
+    }
+    
+    /**
+     * This method is made with the purpose to find an item by it's name
+     */
+    public void search(String phrase)
+    {
+        if(phrase.contains("Duty"));
+        {
+            
+        }
+    }
     
     /**
      * Locate a product with the given ID, and return how
@@ -143,7 +191,7 @@ public class StockList
     public void printHeading()
     {
         System.out.println();
-        System.out.println(" Peacock's Stock List");
+        System.out.println(" Boris's Stock List");
         System.out.println(" ====================");
         System.out.println();
     }
