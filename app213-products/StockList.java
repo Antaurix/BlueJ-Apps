@@ -141,7 +141,7 @@ public class StockList
     {
         if(phrase.contains("Duty"));
         {
-            
+           
         }
     }
     

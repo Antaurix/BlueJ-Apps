@@ -1,0 +1,24 @@
+game1.print();
+ ID 100: Call of Ducty Modern Warfere 3  stock level: 0
+game1.decreaseQuantity(3);
+game1.print();
+ ID 100: Call of Ducty Modern Warfere 3  stock level: 0
+game1.increaseQuantity(7);
+game1.print();
+ ID 100: Call of Ducty Modern Warfere 3  stock level: 7
+game1.print();
+ ID 100: Call of Ducty Modern Warfere 3  stock level: 7
+game1.decreaseQuantity(4);
+game1.print();
+ ID 100: Call of Ducty Modern Warfere 3  stock level: 3
+Product game2 = new Product(101, "Battlefield Bad Company 2 ");
+StockList BorisStock = new StockList();
+BorisStock.add(game1);
+BorisStock.add(game2);
+BorisStock.print();
+
+ Boris's Stock List
+ ====================
+
+ ID 100: Call of Ducty Modern Warfere 3  stock level: 3
+ ID 101: Battlefield Bad Company 2  stock level: 0
