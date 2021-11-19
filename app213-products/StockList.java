@@ -135,15 +135,27 @@ public class StockList
     }
     
     /**
-     * This method is made with the purpose to find an item by it's name
+     * This method is made with the purpose to find an item who contains
+     * a specific phrase.
+     * The method will print out the product id and the quantity and also
+     * it will count how many results we found.
+     * If the result is 0 it means we didn't find any product with the 
+     * phrase.
      */
     public void search(String phrase)
     {
-        if(phrase.contains("Duty"));
+        int count = 0; 
+        for(Product product:stock)
         {
-           
+            if(product.getName().contains(phrase))
+            {
+                System.out.println(product);
+                count += 1;
+            }
         }
+        System.out.println(count+" products found");        
     }
+
     
     /**
      * Locate a product with the given ID, and return how
@@ -152,6 +164,7 @@ public class StockList
      * @param id The ID of the product.
      * @return The quantity of the given product in stock.
      */
+    
     public int numberInStock(int productID)
     {
         return 0;
@@ -194,5 +207,16 @@ public class StockList
         System.out.println(" Boris's Stock List");
         System.out.println(" ====================");
         System.out.println();
+    }
+    
+    public void levels(int value)
+    {
+        for(Product product:stock)
+        {
+            if( == value)
+            {
+                
+            }
+        }
     }
 }
