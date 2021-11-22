@@ -23,11 +23,6 @@ public class StockDemo
     public StockDemo(StockList stock)
     {
         this.stock =  stock;
-       
-        
-        // Add at least 10 products, they must be unique to you
-        // Make sure the ids are sequential numbers
-        
         stock.add(new Product(101, "Crysis 3"));
         stock.add(new Product(102, "Dota 2"));
         stock.add(new Product(103, "Counter Strike Global Offensive"));
@@ -52,7 +47,6 @@ public class StockDemo
      */
     public void runDemo()
     {
-        // Show details of all of the products before delivery.
         
         stock.print();
 

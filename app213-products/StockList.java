@@ -215,8 +215,6 @@ public class StockList
      */
     public void deleteProduct(int productID)
     {
-    
-    
         for(Product product : stock)
         {
             if(product.getID() == productID)
