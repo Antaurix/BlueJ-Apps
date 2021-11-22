@@ -1,0 +1,84 @@
+StockList gameStore = new StockList();
+StockDemo BorisDemo2 = new StockDemo(gameStore);
+BorisDemo2.runDemo();
+
+ Boris's Stock List
+ ====================
+
+ ID 101: Crysis 3 stock level: 0
+ ID 102: Dota 2 stock level: 0
+ ID 103: Counter Strike Global Offensive stock level: 0
+ ID 104: Rift stock level: 0
+ ID 105: Battlefield Bad Company 2 stock level: 0
+ ID 106: Call of Duty: Modern Warfare 2 stock level: 0
+ ID 107: World of Warcraft  stock level: 0
+ ID 108: Need for Speed  stock level: 0
+ ID 109: Grand theft Auto 5  stock level: 0
+ ID 110: Starcraft 2  stock level: 0
+
+ The Product 100 cannot be found
+ We bought 24  Crysis 3
+ We bought 6  Dota 2
+ We bought 34  Counter Strike Global Offensive
+ We bought 16  Rift
+ We bought 2  Battlefield Bad Company 2
+ We bought 33  Call of Duty: Modern Warfare 2
+ We bought 17  World of Warcraft 
+ We bought 30  Need for Speed 
+ We bought 19  Grand theft Auto 5 
+ We bought 29  Starcraft 2 
+
+ Boris's Stock List
+ ====================
+
+ ID 101: Crysis 3 stock level: 24
+ ID 102: Dota 2 stock level: 6
+ ID 103: Counter Strike Global Offensive stock level: 34
+ ID 104: Rift stock level: 16
+ ID 105: Battlefield Bad Company 2 stock level: 2
+ ID 106: Call of Duty: Modern Warfare 2 stock level: 33
+ ID 107: World of Warcraft  stock level: 17
+ ID 108: Need for Speed  stock level: 30
+ ID 109: Grand theft Auto 5  stock level: 19
+ ID 110: Starcraft 2  stock level: 29
+
+ The Product 100 cannot be found
+ We sold 13  Crysis 3
+ Can't sell 32 of Dota 2 because we only have 6
+ We sold 9  Counter Strike Global Offensive
+ Can't sell 23 of Rift because we only have 16
+ We sold 0  Battlefield Bad Company 2
+ We sold 17  Call of Duty: Modern Warfare 2
+ We sold 10  World of Warcraft 
+ We sold 2  Need for Speed 
+ Can't sell 21 of Grand theft Auto 5  because we only have 19
+ We sold 21  Starcraft 2 
+
+ Boris's Stock List
+ ====================
+
+ ID 101: Crysis 3 stock level: 11
+ ID 102: Dota 2 stock level: 6
+ ID 103: Counter Strike Global Offensive stock level: 25
+ ID 104: Rift stock level: 16
+ ID 105: Battlefield Bad Company 2 stock level: 2
+ ID 106: Call of Duty: Modern Warfare 2 stock level: 16
+ ID 107: World of Warcraft  stock level: 7
+ ID 108: Need for Speed  stock level: 28
+ ID 109: Grand theft Auto 5  stock level: 19
+ ID 110: Starcraft 2  stock level: 8
+
+gameStore.deleteProduct(101);
+ The product  ID 101: Crysis 3 stock level: 11 has been removed
+    Exception occurred.
+gameStore.search("Duty");
+ ID 106: Call of Duty: Modern Warfare 2 stock level: 16
+1 products found
+gameStore.levels(20);
+ This stock  ID 102: Dota 2 stock level: 6 < 20
+ This stock  ID 104: Rift stock level: 16 < 20
+ This stock  ID 105: Battlefield Bad Company 2 stock level: 2 < 20
+ This stock  ID 106: Call of Duty: Modern Warfare 2 stock level: 16 < 20
+ This stock  ID 107: World of Warcraft  stock level: 7 < 20
+ This stock  ID 109: Grand theft Auto 5  stock level: 19 < 20
+ This stock  ID 110: Starcraft 2  stock level: 8 < 20
