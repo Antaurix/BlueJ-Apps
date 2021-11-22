@@ -208,14 +208,34 @@ public class StockList
         System.out.println(" ====================");
         System.out.println();
     }
+   
+    /**
+     * With this method we are going to remove an product from the 
+     * stock using it's ID.
+     */
+    public void deleteProduct(int productID)
+    {
     
+    
+        for(Product product : stock)
+        {
+            if(product.getID() == productID)
+            stock.remove(product);
+            System.out.println(" The product " + product + " has been removed");
+        }
+}
+
+/**
+ * This method will display all product whose stock levels are below 
+ * a value that we are going to set.
+ **/
     public void levels(int value)
     {
         for(Product product:stock)
         {
-            if( == value)
+            if(product.quantity < value)
             {
-                
+                System.out.println(" This stock " + product + " < " + value);
             }
         }
     }
