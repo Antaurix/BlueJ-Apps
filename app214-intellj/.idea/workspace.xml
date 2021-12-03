@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="173ad666-e9ad-4b72-b469-aa6c2e44e373" name="Changes" comment="" />
+    <list default="true" id="098b8cb9-6222-4e49-8dc2-61098adc3192" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,7 +10,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="21S4S3e0LDoWe3ZMtdGblRDab4p" />
+  <component name="ProjectId" id="21m6aYqrsP5oHHORuq9O7860wLA" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -19,17 +19,22 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../app214-intellj" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="173ad666-e9ad-4b72-b469-aa6c2e44e373" name="Changes" comment="" />
-      <created>1637921153199</created>
+      <changelist id="098b8cb9-6222-4e49-8dc2-61098adc3192" name="Changes" comment="" />
+      <created>1638533979305</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1637921153199</updated>
+      <updated>1638533979305</updated>
+      <workItem from="1638534355896" duration="65000" />
     </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
 </project>
