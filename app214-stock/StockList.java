@@ -215,13 +215,12 @@ public class StockList
      */
     public void deleteProduct(int productID)
     {
-        for(Product product : stock)
+        Product product = findProduct(productID);
+        
+        if(product != null) 
         {
-            if(product.getID() == productID)
-            { 
                 stock.remove(product);
                 System.out.println(" The product " + product + " has been removed");
-            }
         }
 }
 

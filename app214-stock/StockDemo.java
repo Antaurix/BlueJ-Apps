@@ -22,7 +22,7 @@ public class StockDemo
      */
     public StockDemo(StockList stock)
     {
-        this.stock =  stock;
+        this.stock = stock;
         stock.add(new Product(101, "Crysis 3"));
         stock.add(new Product(102, "Dota 2"));
         stock.add(new Product(103, "Counter Strike Global Offensive"));
@@ -34,7 +34,7 @@ public class StockDemo
         stock.add(new Product(109, "Grand theft Auto 5 " ));
         stock.add(new Product(110, "Starcraft 2 "));
     
-        
+        runDemo();
         
     }
     

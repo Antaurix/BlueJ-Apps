@@ -22,7 +22,7 @@ public class StockApp
         reader = new InputReader();
         
         stock = new StockList();
-        //StockDemo demo = new StockDemo(stock);
+        StockDemo demo = new StockDemo(stock);
     }
 
     /**
@@ -54,17 +54,32 @@ public class StockApp
         {
             int id = reader.getInt(" Please enter your id: ");
             String name =reader.getString(" Please enter the name: ");
-            Product product = new Product(101, name);
+            Product product = new Product(id, name);
             stock.add(product);
+            System.out.println("Product " + product.getID() + " " 
+            + product.getName() + " has been added");
         }
+        else if (choice.equals("remove"))
+             
+        {
+        System.out.println(" Remove a product from the list ");
+        System.out.println();
+        int id = reader.getInt(" Please enter the product id to be removed: ");
+        stock.deleteProduct(id);
+    
+        System.out.println(" The product " + id + " has been removed");
+    
+        }
+             
         else if(choice.equals("print"))
         {
+            
             stock.print();
         }
         
         return false;
     }
-   
+    
     /**
      * Print out a menu of operation choices
      */
