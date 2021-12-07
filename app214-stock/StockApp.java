@@ -100,7 +100,7 @@ public class StockApp
     {
         System.out.println("********************************");
         System.out.println("  App21-04: Stock Application ");
-        System.out.println("      by Student Name");
+        System.out.println("      by Ionut Boris");
         System.out.println("********************************");
     }
 }
