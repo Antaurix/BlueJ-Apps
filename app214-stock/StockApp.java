@@ -81,7 +81,7 @@ public class StockApp
         }
         else if(choice.equals("buy"))
         {
-            System.out.println(" Sell a product from the list ");
+            System.out.println(" Buy a product from the list ");
             System.out.println();
             int id = reader.getInt(" Please enter the product wanted to be" +
             " bought: ");
