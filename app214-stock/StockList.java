@@ -238,4 +238,18 @@ public class StockList
             }
         }
     }
+    
+public void restock(int value)
+{
+    for(Product product:stock)
+    {
+        if(product.quantity == 0)
+        {
+            product.quantity = value;
+            System.out.println(" The stock has been replenished for " + stock
+            + " by ---> " + value);
+        }
+
+    }
+}
 }

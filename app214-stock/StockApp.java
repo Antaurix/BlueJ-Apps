@@ -116,7 +116,9 @@ public class StockApp
         }
         else if(choice.equals("re-stock"))
         {
-            
+            int value = reader.getInt(" Please enter the value added to " +
+            " the empty stock ");
+            stock.restock(value);
         }
         
         return false;
