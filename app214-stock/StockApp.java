@@ -43,7 +43,11 @@ public class StockApp
             finished = executeChoice(choice.toLowerCase());
         }
     }
-    
+    /**
+     * This is the method which will provide us all the choices 
+     * available in the menu
+     * The method calls all the methods from the stocklist.
+     */
     private boolean executeChoice(String choice)
     {
         if(choice.equals("quit"))
@@ -73,8 +77,46 @@ public class StockApp
              
         else if(choice.equals("print"))
         {
-            
             stock.print();
+        }
+        else if(choice.equals("buy"))
+        {
+            System.out.println(" Sell a product from the list ");
+            System.out.println();
+            int id = reader.getInt(" Please enter the product wanted to be" +
+            " bought: ");
+            int amount = reader.getInt(" Please enter ammout: ");
+            stock.buyProduct(id,amount);
+            System.out.println(" The product " + id + " has been bought");
+        }
+        else if(choice.equals("sell"))
+        {
+            System.out.println(" Sell a product from the list ");
+            System.out.println();
+            int id = reader.getInt(" Please enter the product wanted to be" +
+            " sold: ");
+            int amount = reader.getInt(" Please enter ammout: ");
+            stock.sellProduct(id,amount);
+            System.out.println(" The product " + id + " has been sold");
+            
+        }
+        else if(choice.equals("search"))
+        {
+            System.out.println(" Please enter the name of the product: ");
+            System.out.println();
+            String name =reader.getString(" Enter the name of the product: ");
+            stock.search(name);
+            
+        }
+        else if(choice.equals("low-stock"))
+        {
+            int value = reader.getInt(" Please enter the quantity of low " +
+            " stock products ");
+            stock.levels(value);
+        }
+        else if(choice.equals("re-stock"))
+        {
+            
         }
         
         return false;
@@ -90,7 +132,11 @@ public class StockApp
         System.out.println("    Remove:     Remove an old product");
         System.out.println("    Print:      Print all products");
         System.out.println("    Quit:       Quit the program");
-        System.out.println();        
+        System.out.println("    Buy:        Buying a product");  
+        System.out.println("    Sell:       Selling a product");
+        System.out.println("    Search:     Find product by name");
+        System.out.println("    Low-stock:  Find low stocked products");
+        System.out.println("    Re-stock:   Replanish all the stock");
     }
     
     /**

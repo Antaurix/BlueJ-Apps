@@ -32,7 +32,7 @@ public class StockList
     /**
      * A method to buy a single quantity of the product
      */
-    public void buyProduct(int productID)
+    public void buyProduct1(int productID)
     {
         buyProduct(productID, 1);
     }
@@ -129,7 +129,7 @@ public class StockList
      * Sell one of the given product.
      * 
      */
-    public void sellProduct(int productID)
+    public void sellProduct1(int productID)
     {
         sellProduct(productID, 1);
     }
