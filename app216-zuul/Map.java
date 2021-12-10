@@ -15,7 +15,7 @@ public class Map
 {
     // Need to add a list of exits
     
-    private Location outside, theater, pub, lab, office;
+    private Location house,street,car,shop,citycentre,park,museum,beach;
 
     private Location currentLocation;
 
@@ -35,76 +35,74 @@ public class Map
      */
     private void createLocations()
     {
-        createOutside();
-        createTheatre();
-        createPub();
-        createOffice();
-        createLab();
+        createStreet();
+        createHouse();
+        createCar();
+        createShop();
+        createCitycentre();
+        createPark();
+        createMuseum();
+        createBeach();
 
-        currentLocation = outside;  // start game outside
+        currentLocation = street;  // start game inside your house
+    }
+    /**
+     * Create the street situated outside your house.
+     */
+    private void createStreet()
+    {
+        street = new Location("outside on the street");
     }
     
     /**
-     * Create the outside and link it to the
-     * theatre, lab and pub
+     * 
      */
-    private void createOutside()
+    private void createHouse()
     {
-        outside = new Location("outside the main entrance of the university");
-        
+        house = new Location("you are inside your house");
+        house.setExit("west",street);
+        street.setExit("east",house);
+    }
+    
+    private void createShop()
+    {
+        shop = new Location("want to buy something ?"); 
+        shop.setExit("east",street);
+        street.setExit("west",shop);
+    }
+    
+     private void createCar()
+    {
+        car = new Location("your car");
+        car.setExit("south",street);
+        street.setExit("north",car);
     }
     
     /**
-     * Create the pub and link it to the outside
+    * 
      */
-    private void createPub()
+    private void createCitycentre()
     {
-        pub = new Location("in the campus pub");
-        
-        pub.setExit("east", outside);
-        outside.setExit("west", pub);
+        citycentre = new Location("inside a postal office");
     }
-    
-    /**
-     * Create the theatre linked to the outside
-     */
-    private void createTheatre()
+   
+    private void createPark()
     {
-        theater = new Location("in a lecture theater");
-        
-        theater.setExit("west", outside);
-        outside.setExit("east", theater);
+        park = new Location("in pure nature with fresh air");
     }
-    
-    /**
-     * Create the office linked to the lab
-     */
-    private void createOffice()
+    private void createMuseum()
     {
-        office = new Location("in the computing admin office");
-        
+        museum = new Location("a building with a lot of history");
     }
-    
-    /**
-     * Create the lab and link it to the outside and office
-     */
-    private void createLab()
+    private void createBeach()
     {
-        // create the Locations
-        lab = new Location("in a computing lab");
-        
-        lab.setExit("east", office);
-        office.setExit("west", lab);
-        
-        lab.setExit("north", outside);
-        outside.setExit("south", lab);
+        beach = new Location("beautiful water and blue sky");
     }
     
     public Location getCurrentLocation()
     {
         return currentLocation;
     }
-    
     public void enterLocation(Location nextLocation)
     {
         currentLocation = nextLocation;
