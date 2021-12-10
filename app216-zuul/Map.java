@@ -60,20 +60,20 @@ public class Map
     private void createHouse()
     {
         house = new Location("you are inside your house");
-        house.setExit("west",street);
-        street.setExit("east",house);
+        house.setExit("east",street);
+        street.setExit("west",house);
     }
     
     private void createShop()
     {
         shop = new Location("want to buy something ?"); 
-        shop.setExit("east",street);
-        street.setExit("west",shop);
+        shop.setExit("west",street);
+        street.setExit("east",shop);
     }
     
      private void createCar()
     {
-        car = new Location("your car");
+        car = new Location("your inside your car");
         car.setExit("south",street);
         street.setExit("north",car);
     }
@@ -83,20 +83,28 @@ public class Map
      */
     private void createCitycentre()
     {
-        citycentre = new Location("inside a postal office");
+        citycentre = new Location("you are in the middle of the city");
+        street.setExit("south",citycentre);
+        citycentre.setExit("north",street);
     }
    
     private void createPark()
     {
         park = new Location("in pure nature with fresh air");
+        citycentre.setExit("east",park);
+        park.setExit("west",citycentre);
     }
     private void createMuseum()
     {
         museum = new Location("a building with a lot of history");
+        citycentre.setExit("east",museum);
+        museum.setExit("west",citycentre);
     }
     private void createBeach()
     {
-        beach = new Location("beautiful water and blue sky");
+        beach = new Location(" you see a beautiful water and a blue sky");
+        citycentre.setExit("south",beach);
+        beach.setExit("north",citycentre);
     }
     
     public Location getCurrentLocation()
