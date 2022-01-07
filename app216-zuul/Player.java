@@ -13,7 +13,7 @@ public class Player
     
     public int ENERGY = 100;
     public int SCORE = 200;
-    public ArrayList<Items> inventory;
+    public ArrayList <Items> inventory;
     
     public Player(String name)
     {
@@ -36,19 +36,6 @@ public class Player
     public void setName(String name)
     {
         this.name = name;
-    }
-    
-    public void drop(Items item)
-    {
-        if (!inventory.contains(item))
-        {
-            System.out.println("You don't have this item ! ");
-        }
-        else
-        {
-            System.out.println("You have dropped: " + item);
-            inventory.remove(item);
-        }
     }
     
     public void printStatus()

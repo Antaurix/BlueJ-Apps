@@ -23,7 +23,6 @@ public class CommandReader
 
     private String commandWord = null;
     private String word2 = null;
-    ArrayList<Items> inventory = new ArrayList<Items>();
     /**
      * Create a parser to read from the terminal window.
      */

@@ -22,6 +22,7 @@ public class Location
     private String description;
     private HashMap<String, Location> exits;   // stores exits of this room.
     private Items item;
+    private HashMap<String,Items> items;
     /**
      * Create a location described "description". Initially, it has
      * no exits. "description" is something like "a kitchen" or
@@ -31,6 +32,7 @@ public class Location
     {
         this.description = description;
         exits = new HashMap<>();
+        items = new HashMap<>();
     }
 
     /**
@@ -43,6 +45,11 @@ public class Location
         exits.put(direction, neighbor);
     }
 
+    public void setItems(Items item)
+    {
+        this.item = item;
+    }
+    
     /**
      * @return The short description of the room
      * (the one that was defined in the constructor).
@@ -60,7 +67,8 @@ public class Location
      */
     public String getLongDescription()
     {
-        return " You are " + description + ".\n" + getExitString();
+        return " You are " + description + ".\n" + getExitString() + "\n" 
+        +getItemsString();
     }
 
     /**
@@ -78,7 +86,18 @@ public class Location
         }
         return returnString;
     }
-
+    
+    private String getItemsString()
+    {
+        if(item != null)
+        {
+        String returnString = "Items: ";
+        returnString += " " + item;
+        return returnString;
+        }
+        return null;
+    }
+    
     /**
      * Return the room that is reached if we go from this room in direction
      * "direction". If there is no room in that direction, return null.

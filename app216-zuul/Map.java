@@ -62,6 +62,7 @@ public class Map
         house = new Location("you are inside your house");
         house.setExit("east",street);
         street.setExit("west",house);
+        house.setItems(new Items("KEY","Try to open the car",01));
     }
     
     private void createShop()
@@ -69,6 +70,7 @@ public class Map
         shop = new Location("want to buy something ?"); 
         shop.setExit("west",street);
         street.setExit("east",shop);
+        shop.setItems(new Items("Swim suit","You can't swimm naked ! ",04));
     }
     
      private void createCar()
@@ -76,6 +78,8 @@ public class Map
         car = new Location("your inside your car");
         car.setExit("south",street);
         street.setExit("north",car);
+        car.setItems(new Items("Covid Pass", "You can't do anything until you" + 
+        "had your vaccine",02));
     }
     
     /**
@@ -86,6 +90,8 @@ public class Map
         citycentre = new Location("you are in the middle of the city");
         street.setExit("south",citycentre);
         citycentre.setExit("north",street);
+        citycentre.setItems(new Items("Money","Everything is possible when you have money",
+        03));
     }
    
     private void createPark()
@@ -99,6 +105,7 @@ public class Map
         museum = new Location("a building with a lot of history");
         citycentre.setExit("east",museum);
         museum.setExit("west",citycentre);
+        museum.setItems(new Items("Mask","Don't spread the virus !",03));
     }
     private void createBeach()
     {
