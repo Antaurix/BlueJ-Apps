@@ -23,6 +23,7 @@ public class CommandReader
 
     private String commandWord = null;
     private String word2 = null;
+    ArrayList<Items> inventory = new ArrayList<Items>();
     /**
      * Create a parser to read from the terminal window.
      */
@@ -71,7 +72,13 @@ public class CommandReader
         {
             TakeCommand take = new TakeCommand(game, word2);
             take.execute();
-        }        
+        }    
+        else if(commandWord.equals(CommandWords.DROP.word))
+        {
+            DropCommand drop = new DropCommand(game, word2);
+            drop.execute();
+        }
+        
         else if(commandWord.equals(CommandWords.HELP.word))
         {
             HelpCommand help = new HelpCommand(game);
@@ -81,8 +88,13 @@ public class CommandReader
         {
             return true;  // game over
         }
+        
+        
+       
+    
 
         // Return false means the game is not over
         return false;
     }
 }
+

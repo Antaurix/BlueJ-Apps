@@ -12,6 +12,7 @@ public enum CommandWords
     TAKE ("take", "Take <item> from location"),
     HELP ("help", "List all available commands"),
     QUIT ("quit", "End the game");
+    //DROP ("drop", "Drop the current item");
     
     public final String word;
     public final String description;
