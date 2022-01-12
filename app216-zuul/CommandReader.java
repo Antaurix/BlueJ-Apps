@@ -72,11 +72,11 @@ public class CommandReader
             TakeCommand take = new TakeCommand(game, word2);
             take.execute();
         }    
-        else if(commandWord.equals(CommandWords.DROP.word))
-        {
-            DropCommand drop = new DropCommand(game, word2);
-            drop.execute();
-        }
+        //else if(commandWord.equals(CommandWords.DROP.word))
+        //{
+            //DropCommand drop = new DropCommand(game, word2);
+            //drop.execute();
+        //}
         
         else if(commandWord.equals(CommandWords.HELP.word))
         {

@@ -12,15 +12,31 @@ public class Player
     private int score;
     
     public int ENERGY = 100;
-    public int SCORE = 200;
+    public int SCORE = 100;
     public ArrayList <Items> inventory;
     
     public Player(String name)
     {
         this.name = name;
-        energy =  ENERGY;
-        score = 0;
+        energy =  100;
+        score = 100;
         inventory = new ArrayList<>();
+    }
+    
+    public void increaseEnergy(int amount)
+    {
+        energy += amount;
+        if(energy > 100)
+        energy = 100;
+    }
+    
+    public void decreaseEnergy(int amount)
+    {
+        energy -= amount;
+        if(energy < 10);
+        {
+            score = 0;
+        }
     }
     
     public String getInventory()
@@ -36,6 +52,21 @@ public class Player
     public void setName(String name)
     {
         this.name = name;
+    }
+    
+    public boolean Alive()
+    {
+        return score > 0;
+    }
+    
+    public boolean Dead()
+    {
+        return score < 0;
+    }
+    
+    public void addItem(Items item)
+    {
+        inventory.add(item);
     }
     
     public void printStatus()

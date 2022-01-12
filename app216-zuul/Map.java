@@ -67,7 +67,7 @@ public class Map
     
     private void createShop()
     {
-        shop = new Location("want to buy something ?"); 
+        shop = new Location("Inside a shop: want to buy something ?"); 
         shop.setExit("west",street);
         street.setExit("east",shop);
         shop.setItems(new Items("Swim suit","You can't swimm naked ! ",04));
@@ -75,7 +75,7 @@ public class Map
     
      private void createCar()
     {
-        car = new Location("your inside your car");
+        car = new Location("you are inside your car");
         car.setExit("south",street);
         street.setExit("north",car);
         car.setItems(new Items("Covid Pass", "You can't do anything until you" + 
@@ -105,7 +105,7 @@ public class Map
         museum = new Location("a building with a lot of history");
         citycentre.setExit("east",museum);
         museum.setExit("west",citycentre);
-        museum.setItems(new Items("Mask","Don't spread the virus !",03));
+        museum.setItems(new Items("Mask","Don't spread the virus !",05));
     }
     private void createBeach()
     {

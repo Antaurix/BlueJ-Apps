@@ -22,6 +22,8 @@ public class Game
     public final Map MAP;
     private CommandReader reader;
     private boolean gameOver;
+    public Player player;
+    
         
     
     /**
@@ -30,6 +32,7 @@ public class Game
     public Game() 
     {
         MAP = new Map();
+        player = new Player("Boris");
         reader = new CommandReader(this);
     }
 
@@ -58,9 +61,13 @@ public class Game
     private void printWelcome()
     {
         System.out.println();
-        System.out.println(" Welcome to the World of Zuul!");
-        System.out.println(" World of Zuul is a new, incredibly boring adventure game.");
-        System.out.println(" Type 'help' if you need help.");
+        System.out.println(" Welcome to Covid Survival !");
+        System.out.println(" A normal day with our loved worldwide virus.");
+        System.out.println(" You will need to relax from all the strees from this ");
+        System.out.println(" insanely biological diseas by going to the sunny beach.");
+        System.out.println(" Along your journey you will need to stop to different ");
+        System.out.println(" locations, many of them being accesible only with items.");
+        System.out.println(" Type 'help' if you need help.(cure not included)");
         System.out.println();
         System.out.println(MAP.getCurrentLocation().getLongDescription());
     }
