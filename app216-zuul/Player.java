@@ -13,40 +13,28 @@ public class Player
     
     public int ENERGY = 100;
     public int SCORE = 100;
-    public ArrayList <Items> inventory;
+    public ArrayList <Item> items;
     
     public Player(String name)
     {
         this.name = name;
-        energy =  100;
-        score = 100;
-        inventory = new ArrayList<>();
+        energy =  50;
+        score = 50;
     }
     
     public void increaseEnergy(int amount)
     {
         energy += amount;
         if(energy > 100)
-        energy = 100;
+            energy = 100;
     }
     
     public void decreaseEnergy(int amount)
     {
         energy -= amount;
-        if(energy < 10);
-        {
+        if(energy < 10)
             score = 0;
-        }
-    }
-    
-    public String getInventory()
-    {
-        String inventoryString = " ";
-        for (Items item : inventory)
-        {
-            inventoryString += item.toString() + ", ";
-        }
-        return inventoryString;
+        
     }
     
     public void setName(String name)
@@ -64,10 +52,14 @@ public class Player
         return score < 0;
     }
     
-    public void addItem(Items item)
+    public void addItem(Item item)
     {
-        inventory.add(item);
-    }
+       //this.item = item;
+       //if(item.getItemType()==ItemType.KEY)
+       //{
+       //score +=10;
+       }
+    
     
     public void printStatus()
     {

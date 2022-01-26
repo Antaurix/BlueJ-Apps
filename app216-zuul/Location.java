@@ -1,6 +1,7 @@
 import java.util.Set;
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.ArrayList;
 
 /**
  * Class Location - a location on the map of an adventure game.
@@ -20,9 +21,9 @@ import java.util.Iterator;
 public class Location 
 {
     private String description;
-    private HashMap<String, Location> exits;   // stores exits of this room.
-    private Items item;
-    private HashMap<String,Items> items;
+    private ArrayList<Item> items;   // stores exits of this room.
+    private Item item;
+    private HashMap<String,Location> exits;
     /**
      * Create a location described "description". Initially, it has
      * no exits. "description" is something like "a kitchen" or
@@ -32,7 +33,6 @@ public class Location
     {
         this.description = description;
         exits = new HashMap<>();
-        items = new HashMap<>();
     }
 
     /**
@@ -45,7 +45,7 @@ public class Location
         exits.put(direction, neighbor);
     }
 
-    public void setItems(Items item)
+    public void setItems(Item item)
     {
         this.item = item;
     }
@@ -67,10 +67,12 @@ public class Location
      */
     public String getLongDescription()
     {
-        String returnString =" You are " + description + ".\n" + getExitString();
-        if(getItemsString() != null)
-        returnString += "\n" +getItemsString();
-        return returnString;
+        String output =" You are " + description + ".\n" + getExitString();
+        if(item !=null)
+        {
+        output = output.concat("\n This place has the following items: " + item.getName());
+        }
+        return output;
     }
 
     /**
@@ -89,16 +91,6 @@ public class Location
         return returnString;
     }
     
-    private String getItemsString()
-    {
-        if(item != null)
-        {
-        String returnString = "Items: ";
-        returnString += " " + item.getName();
-        return returnString;
-        }
-        return " ";
-    }
     
     /**
      * Return the room that is reached if we go from this room in direction
@@ -110,5 +102,25 @@ public class Location
     {
         return exits.get(direction);
     }
+    
+    public void addItem(Item item)
+    {
+        this.item = item;
+        //this.items.add((item));
+    }
+    
+    public Item remove(String itemName)
+    {
+        Item oldItem = item;
+        if(this.item.getName().equals(itemName))
+        {
+            item = null;
+            return oldItem;
+        }
+        else
+        return null;
+    }
+    
+    
 }
 

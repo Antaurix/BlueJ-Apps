@@ -22,9 +22,7 @@ public class Game
     public final Map MAP;
     private CommandReader reader;
     private boolean gameOver;
-    public Player player;
-    
-        
+    public  Player player;       
     
     /**
      * Create the game and initialise its internal map.

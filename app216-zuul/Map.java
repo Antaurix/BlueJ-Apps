@@ -62,7 +62,9 @@ public class Map
         house = new Location("you are inside your house");
         house.setExit("east",street);
         street.setExit("west",house);
-        house.setItems(new Items("KEY","Try to open the car",01));
+        //house.setItems(new Items("KEY","Try to open the car",01));
+        Item key = new Item(ItemType.KEY, "key");
+        house.addItem(key);
     }
     
     private void createShop()
@@ -70,7 +72,9 @@ public class Map
         shop = new Location("Inside a shop: want to buy something ?"); 
         shop.setExit("west",street);
         street.setExit("east",shop);
-        shop.setItems(new Items("Swim suit","You can't swimm naked ! ",04));
+        //shop.setItems(new Items("swim-suit","You can't swimm naked ! ",04));
+        Item swimsuit = new Item(ItemType.SwimSuit, "swim-suit");
+        shop.addItem(swimsuit);
     }
     
      private void createCar()
@@ -78,8 +82,10 @@ public class Map
         car = new Location("you are inside your car");
         car.setExit("south",street);
         street.setExit("north",car);
-        car.setItems(new Items("Covid Pass", "You can't do anything until you" + 
-        "had your vaccine",02));
+        //car.setItems(new Items("Covid Pass", "You can't do anything until you" + 
+        //"had your vaccine",02));
+        Item covidpass = new Item(ItemType.CovidPass, "covidpass");
+        car.addItem(covidpass);
     }
     
     /**
@@ -90,8 +96,10 @@ public class Map
         citycentre = new Location("you are in the middle of the city");
         street.setExit("south",citycentre);
         citycentre.setExit("north",street);
-        citycentre.setItems(new Items("Money","Everything is possible when you have money",
-        03));
+        //citycentre.setItems(new Items("Money","Everything is possible when you have money",
+        //03));
+        Item money = new Item(ItemType.Money, "money");
+        citycentre.addItem(money);
     }
    
     private void createPark()
@@ -105,7 +113,9 @@ public class Map
         museum = new Location("a building with a lot of history");
         citycentre.setExit("east",museum);
         museum.setExit("west",citycentre);
-        museum.setItems(new Items("Mask","Don't spread the virus !",05));
+        //museum.setItems(new Items("Mask","Don't spread the virus !",05));
+        Item mask = new Item(ItemType.MASK, "mask");
+        museum.addItem(mask);
     }
     private void createBeach()
     {
@@ -118,6 +128,7 @@ public class Map
     {
         return currentLocation;
     }
+    
     public void enterLocation(Location nextLocation)
     {
         currentLocation = nextLocation;
