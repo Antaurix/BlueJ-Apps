@@ -2,8 +2,8 @@ import java.util.ArrayList;
 /**
  * Write a description of class Player here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Ionut Florin Boris
+ * @version v1.0 2022
  */
 public class Player
 {

@@ -3,13 +3,10 @@
  * This class is reponsible for creating and
  * linking all the Locations in the game to
  * form a 2D or 3D network
- *
- *  [Pub]<---->[Outside]<---->[Theatre]
- *                 |
- *          [Computer Lab]<---->[Office]
  *             
  * @author Derek Peacock and Nicholas Day
- * @version 2021-08-22
+ * @modified by Ionut Boris
+ * @version v1.0 2022
  */
 public class Map
 {

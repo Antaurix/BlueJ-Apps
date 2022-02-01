@@ -2,8 +2,8 @@
 /**
  * Write a description of class ItemType here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Ionut Florin Boris
+ * @version v1.0 2022
  */
 
 public enum ItemType

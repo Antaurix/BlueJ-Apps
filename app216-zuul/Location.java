@@ -14,8 +14,8 @@ import java.util.ArrayList;
  * location stores a reference to the neighboring locations.
  * 
  * @author  Michael Kölling and David J. Barnes
- * Modified by Derek Peacock & Nicholas Day
- * @version 2016.02.29
+ * Modified by Ionut Florin Boris
+ * @version v1.0 2022
  */
 
 public class Location 

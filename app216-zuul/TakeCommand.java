@@ -5,8 +5,8 @@
  * and carry it around to use somewhere
  * else
  *
- * @author Josh Sweeney
- * @version 2021-08-23
+ * @author Josh Sweeney & Ionut Boris
+ * @version v1.0 2022
  */
 
   public class TakeCommand extends ZuulCommand
